@@ -25,7 +25,9 @@ public class BensDeConsumo extends Bens {
 	}
 
 	public void solicitarBemDeConsumo(int quantidade) {
+		System.out.println("quantidade atual" + getQuantidade());
 		this.quantidade = this.quantidade - quantidade;
+		System.out.println("Depois de retirar:" + getQuantidade());
 	}
 	// Fim dos metodos
 
