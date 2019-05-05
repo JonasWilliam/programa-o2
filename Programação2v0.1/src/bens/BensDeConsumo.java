@@ -84,7 +84,11 @@ public class BensDeConsumo extends Bens implements RepositorioBens {
 
 	@Override
 	public void listar() {
-		// TODO Auto-generated method stub
+		for (int i = 0; i <= bensDeConsumo.length; i++) {
+			System.out.println(bensDeConsumo[i].getNome());
+			System.out.println(bensDeConsumo[i].getCodigo());
+		}
+
 		
 	}
 
