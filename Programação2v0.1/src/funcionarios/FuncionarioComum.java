@@ -1,12 +1,19 @@
 package funcionarios;
 
-public class FuncionarioComum extends Funcionarios{
+public class FuncionarioComum extends FuncionarioAbstrato{
 
-	public FuncionarioComum(int matricula, String usuario, String senha, int nivelPermissao, String nome,
-			String endereco, int cpf) {
-		super(matricula, usuario, senha, nivelPermissao, nome, endereco, cpf);
-		
+	public FuncionarioComum(String nome, String endereco, String cpf, int matricula, String usuario, String senha,
+			int nivelPermissao) {
+		super(nome, endereco, cpf, matricula, usuario, senha, nivelPermissao);
+	
 	}
 
-	
+	public void alterarDadosLogin(String usuario,String senha) {
+		this.setSenha(senha);
+		this.setUsuario(usuario);
+		
+	}
+	public void alterarEndereco(String endereco) {
+		this.setEndereco(endereco);
+	}
 }

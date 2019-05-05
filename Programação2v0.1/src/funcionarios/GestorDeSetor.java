@@ -2,17 +2,20 @@ package funcionarios;
 
 import extras.Setor;
 
-public class GestorDeSetor extends Funcionarios {
-
-	public GestorDeSetor(int matricula, String usuario, String senha, int nivelPermissao, String nome, String endereco,
-			int cpf) {
-		super(matricula, usuario, senha, nivelPermissao, nome, endereco, cpf);
+public class GestorDeSetor extends FuncionarioAbstrato {
 		
-	}
+	private Setor setorDeLotacao;
+	
 
 	
 
-	private Setor setorDeLotacao;
+	public GestorDeSetor(String nome, String endereco, String cpf, int matricula, String usuario, String senha,
+			int nivelPermissao) {
+		super(nome, endereco, cpf, matricula, usuario, senha, nivelPermissao);
+		
+	}
+
+
 
 	//gets e sets
 	

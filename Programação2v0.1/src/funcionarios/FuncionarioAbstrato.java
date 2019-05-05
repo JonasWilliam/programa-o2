@@ -1,26 +1,52 @@
 package funcionarios;
 
-public class Funcionarios extends FuncionarioAbstratato{
+public abstract class FuncionarioAbstrato {
 
-
+	private String nome;
+	private String endereco;
+	private String cpf;
 	private int matricula;
 	private String usuario;
 	private String senha;
 	private int nivelPermissao;
-	
-	//construtor
-	
-	public Funcionarios(int matricula,String usuario,String senha,int nivelPermissao,String nome, String endereco, int cpf) {
-		super(nome, endereco, cpf);
+
+	public FuncionarioAbstrato(String nome, String endereco, String cpf, int matricula, String usuario, String senha, int nivelPermissao) {
+		this.nome = nome;
+		this.endereco = endereco;
+		this.cpf = cpf;
 		this.matricula = matricula;
 		this.usuario = usuario;
 		this.senha = senha;
 		this.nivelPermissao = nivelPermissao;
 	}
 
+	public void ImprimirDados() {
+		System.out.println("Nome: " + nome + "\nEndereço: " + endereco + "\nCPF: " + cpf);
+	}
 
+	public String getNome() {
+		return nome;
+	}
 
-	// gets e sets
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public String getEndereco() {
+		return endereco;
+	}
+
+	public void setEndereco(String endereco) {
+		this.endereco = endereco;
+	}
+
+	public String getCpf() {
+		return cpf;
+	}
+
+	public void setCpf(String cpf) {
+		this.cpf = cpf;
+	}
 
 	public int getMatricula() {
 		return matricula;
@@ -55,5 +81,5 @@ public class Funcionarios extends FuncionarioAbstratato{
 	public void setNivelPermissao(int nivelPermissao) {
 		this.nivelPermissao = nivelPermissao;
 	}
-
+	
 }

@@ -1,17 +1,18 @@
 package extras;
 
 import bens.Bens;
-import funcionarios.Funcionarios;
+import funcionarios.FuncionarioAbstrato;
+
 
 public class HistoricoDeUso {
 
 	private Bens bem;
-	private Funcionarios funcionario;
+	private FuncionarioAbstrato funcionario;
 	private Data dataDoOcorrido;
 	private Setor setorSolicitante;
 
 	// Construtor
-	HistoricoDeUso(Bens bem, Funcionarios funcionario, Data dataDoOcorrido, Setor setorSolicitante) {
+	HistoricoDeUso(Bens bem, FuncionarioAbstrato funcionario, Data dataDoOcorrido, Setor setorSolicitante) {
 		this.bem = bem;
 		this.dataDoOcorrido = dataDoOcorrido;
 		this.funcionario = funcionario;
@@ -49,11 +50,11 @@ public class HistoricoDeUso {
 		this.bem = bem;
 	}
 
-	public Funcionarios getFuncionario() {
+	public FuncionarioAbstrato getFuncionario() {
 		return funcionario;
 	}
 
-	public void setFuncionario(Funcionarios funcionario) {
+	public void setFuncionario(FuncionarioAbstrato funcionario) {
 		this.funcionario = funcionario;
 	}
 
