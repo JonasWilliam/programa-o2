@@ -1,4 +1,4 @@
-package funcionarios;
+package negocio;
 
 public class FuncionarioComum extends FuncionarioAbstrato{
 

@@ -1,4 +1,4 @@
-package funcionarios;
+package negocio;
 
 import extras.Setor;
 

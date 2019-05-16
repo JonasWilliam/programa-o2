@@ -1,4 +1,4 @@
-package bens;
+package negocio;
 
 
 
@@ -18,6 +18,9 @@ public class Bens {
 		this.codigo = codigo;
 		this.nome = nome;
 		this.setorLocacao = setorLocacao;
+	}
+	public Bens() {
+		
 	}
 	// Construtor
 	

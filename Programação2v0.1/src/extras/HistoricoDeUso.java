@@ -1,7 +1,7 @@
 package extras;
 
-import bens.Bens;
-import funcionarios.FuncionarioAbstrato;
+import negocio.Bens;
+import negocio.FuncionarioAbstrato;
 
 
 public class HistoricoDeUso {

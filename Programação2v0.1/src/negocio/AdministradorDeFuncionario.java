@@ -1,7 +1,4 @@
-package funcionarios;
-
-import bens.Bens;
-import bens.BensDeConsumo;
+package negocio;
 
 public class AdministradorDeFuncionario extends FuncionarioAbstrato implements RepositorioFuncionario {
 

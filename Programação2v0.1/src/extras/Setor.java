@@ -1,6 +1,6 @@
 package extras;
 
-import funcionarios.GestorDeSetor;
+import negocio.GestorDeSetor;
 
 public class Setor {
 

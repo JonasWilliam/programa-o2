@@ -1,7 +1,4 @@
-package bens;
-
-
-import funcionarios.GestorDeSetor;
+package negocio;
 
 public class TesteBens {
 
