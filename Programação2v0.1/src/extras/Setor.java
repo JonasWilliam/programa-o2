@@ -23,38 +23,7 @@ public class Setor {
 	//Metodos
 	
 	
-	public void exibirDetalhesSetor() {
-		System.out.println("Nome do setor: " + getNome());
-		System.out.println("código do setor: " + getCodigo());
-		
-	}
 	
-	public void listarSetores() { /*aqui vai ser uma lista?*/
-		
-	}
-	public void removerSetor(Setor s) {
-		
-	}
-	public void alterarSetor(Setor s,int codigo,String nome,GestorDeSetor gestor) {
-		this.setCodigo(codigo);
-		this.setGestor(gestor);
-		this.setNome(nome);
-		
-	}
-	
-	public void alterarSetor(Setor s,String nome) {
-		this.setNome(nome);
-		
-	}
-	
-	public void alterarSetor(Setor s,GestorDeSetor gestor) {
-		this.setGestor(gestor);
-		
-	}
-	public void alterarSetor(Setor s,int codigo) {
-		this.setCodigo(codigo);
-		
-	}
 	
 	// fim dos Metodos
 	

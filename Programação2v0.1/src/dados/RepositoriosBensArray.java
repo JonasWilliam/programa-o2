@@ -35,7 +35,7 @@ public class RepositoriosBensArray implements RepositorioBens {
 			if(bens[i].getCodigo() == codigo) {
 				bens[i] = null;
 				for(int j = 0; j >= bens.length ; j++) {
-					if(bens[j+1] == null) {
+					if(bens[j] != null && bens[j+1] == null) {
 						bens[i] = bens[j];
 					}
 				}

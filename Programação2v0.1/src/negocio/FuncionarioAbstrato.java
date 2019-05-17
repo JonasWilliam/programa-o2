@@ -5,24 +5,26 @@ public abstract class FuncionarioAbstrato {
 	private String nome;
 	private String endereco;
 	private String cpf;
-	private int matricula;
 	private String usuario;
 	private String senha;
-	private int nivelPermissao;
 
-	public FuncionarioAbstrato(String nome, String endereco, String cpf, int matricula, String usuario, String senha, int nivelPermissao) {
+
+	public FuncionarioAbstrato(String nome, String endereco, String cpf,String usuario, String senha) {
 		this.nome = nome;
 		this.endereco = endereco;
 		this.cpf = cpf;
-		this.matricula = matricula;
 		this.usuario = usuario;
 		this.senha = senha;
-		this.nivelPermissao = nivelPermissao;
+		
+	}
+	
+	public FuncionarioAbstrato(String nome,String endereco,String cpf,int matricula) {
+		this.nome = nome;
+		this.endereco = endereco;
+		this.cpf = cpf;
+		
 	}
 
-	public void ImprimirDados() {
-		System.out.println("Nome: " + nome + "\nEndereço: " + endereco + "\nCPF: " + cpf);
-	}
 
 	public String getNome() {
 		return nome;
@@ -48,14 +50,7 @@ public abstract class FuncionarioAbstrato {
 		this.cpf = cpf;
 	}
 
-	public int getMatricula() {
-		return matricula;
-	}
-
-	public void setMatricula(int matricula) {
-		this.matricula = matricula;
-	}
-
+	
 	
 
 	public String getUsuario() {
@@ -74,12 +69,4 @@ public abstract class FuncionarioAbstrato {
 		this.senha = senha;
 	}
 
-	public int getNivelPermissao() {
-		return nivelPermissao;
-	}
-
-	public void setNivelPermissao(int nivelPermissao) {
-		this.nivelPermissao = nivelPermissao;
-	}
-	
 }
