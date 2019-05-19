@@ -48,7 +48,7 @@ public class RepositoriosFuncionariosArray implements RepositorioFuncionario {
 	}
 
 	@Override
-	public void alterar(FuncionarioAbstrato a,String endereco, String senha) {
+	public void alterarCompleto(FuncionarioAbstrato a,String endereco, String senha) {
 		a.setEndereco(endereco);
 		a.setSenha(senha);
 	}

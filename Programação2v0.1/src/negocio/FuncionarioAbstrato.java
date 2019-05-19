@@ -8,24 +8,25 @@ public abstract class FuncionarioAbstrato {
 	private String usuario;
 	private String senha;
 
-
-	public FuncionarioAbstrato(String nome, String endereco, String cpf,String usuario, String senha) {
+//Construtores
+	public FuncionarioAbstrato(String nome, String endereco, String cpf, String usuario, String senha) {
 		this.nome = nome;
 		this.endereco = endereco;
 		this.cpf = cpf;
 		this.usuario = usuario;
 		this.senha = senha;
-		
+
 	}
-	
-	public FuncionarioAbstrato(String nome,String endereco,String cpf,int matricula) {
+
+	public FuncionarioAbstrato(String nome, String endereco, String cpf, int matricula) {
 		this.nome = nome;
 		this.endereco = endereco;
 		this.cpf = cpf;
-		
+
 	}
+//Construtores
 
-
+//Gets e Sets
 	public String getNome() {
 		return nome;
 	}
@@ -50,9 +51,6 @@ public abstract class FuncionarioAbstrato {
 		this.cpf = cpf;
 	}
 
-	
-	
-
 	public String getUsuario() {
 		return usuario;
 	}
@@ -68,5 +66,5 @@ public abstract class FuncionarioAbstrato {
 	public void setSenha(String senha) {
 		this.senha = senha;
 	}
-
+//Gets e Sets
 }

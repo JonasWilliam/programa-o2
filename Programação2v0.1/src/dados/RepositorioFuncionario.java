@@ -8,7 +8,7 @@ public interface RepositorioFuncionario {
 
 	public void remover(String cpf);
 
-	public void alterar(FuncionarioAbstrato a,String endereco, String senha);
+	public void alterarCompleto(FuncionarioAbstrato a,String endereco, String senha);
 
 	public void alterarSenha(String senha,FuncionarioAbstrato a);
 

@@ -27,27 +27,7 @@ public class RepositorioSetorArray implements RepositorioSetor {
 		return setor;
 	}
 
-	public void alterarSetor(Setor s, int codigo, String nome, GestorDeSetor gestor) {
-		s.setCodigo(codigo);
-		s.setGestor(gestor);
-		s.setNome(nome);
-
-	}
-
-	public void alterarSetor(Setor s, String nome) {
-		s.setNome(nome);
-
-	}
-
-	public void alterarSetor(Setor s, GestorDeSetor gestor) {
-		s.setGestor(gestor);
-
-	}
-
-	public void alterarSetor(Setor s, int codigo) {
-		s.setCodigo(codigo);
-
-	}
+	
 
 	@Override
 	public void excluir(int codigo) {
@@ -65,5 +45,27 @@ public class RepositorioSetorArray implements RepositorioSetor {
 			}
 		}
 	}
+
+	@Override
+	public void alterarCompletoSetor(Setor s, int codigo, String nome, GestorDeSetor gestor) {
+		s.setCodigo(codigo);
+		s.setGestor(gestor);
+		s.setNome(nome);
+		
+	}
+
+	@Override
+	public void alterarCodigoSetor(Setor s, int codigo) {
+		s.setCodigo(codigo);
+		
+	}
+
+	@Override
+	public void alterarGestorSetor(Setor s, GestorDeSetor gestor) {
+		s.setGestor(gestor);
+		
+	}
+
+	
 
 }
