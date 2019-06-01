@@ -21,25 +21,6 @@ public class HistoricoDeUso {
 	// Fim do Construtor
 
 
-
-	// Metodos
-
-	public void exibirHistorico(HistoricoDeUso h) {
-		System.out.println("************************************");
-		System.out.println("Historico de Uso:");
-		System.out.println("Nome do bem:");
-		System.out.println(h.getBem().getNome());
-		System.out.println("Nome do funcionário que movimentou e cpf:");
-		System.out.println(h.getFuncionario().getNome());
-		System.out.println(h.getFuncionario().getCpf());
-		System.out.println("no dia:" + h.getDataDoOcorrido().getDia());
-		System.out.println("no mes:" + h.getDataDoOcorrido().getMes());
-		System.out.println("no ano:" + h.getDataDoOcorrido().getAno());
-		System.out.println("no dia:" + h.getSetorSolicitante().getNome());
-		System.out.println("************************************");
-
-	}
-	
 	// gets e sets
 
 	public Bens getBem() {
